@@ -1,0 +1,44 @@
+.profile {
+  width: 300px;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+.description {
+  text-align: center;
+}
+.avatar {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
+}
+.profileName {
+  font-size: 30px;
+  font-weight: 700;
+}
+.tag {
+  font-size: 20px;
+}
+.location {
+  font-size: 24px;
+}
+.stats {
+  font-size: 15px;
+  padding: 3px;
+  display: flex;
+  column-gap: 8px;
+}
+.stats li {
+  padding: 8px 1px;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: grey;
+}
