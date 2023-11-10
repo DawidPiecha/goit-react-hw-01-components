@@ -38,7 +38,7 @@
 .stats li {
   padding: 8px 1px;
   color: white;
-  border: 1px solid grey;
+  border: 2px solid black;
   border-radius: 10px;
   background-color: grey;
 }
