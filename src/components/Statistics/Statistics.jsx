@@ -5,7 +5,7 @@ const colorPalette = ['red', 'navy', 'green', 'black', 'purple'];
 
 const Statistics = ({ title, stats }) => (
   <section className={css.statistics}>
-    <h2 className={css.title}>{title}</h2>
+    {title && <h2 className={css.title}>{title}</h2>}
 
     <ul className={css['stat-list']}>
       {stats.map((stat, index) => (
@@ -23,8 +23,14 @@ const Statistics = ({ title, stats }) => (
 );
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.array.isRequired,
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export { Statistics };
